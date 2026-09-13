@@ -25,12 +25,12 @@ class Handler(BaseHTTPRequestHandler):
         elif self.path == "/metrics":
             uptime = time.monotonic() - START_TIME
             body = (
-                "# HELP app_requests_total Total HTTP requests received\\n"
-                "# TYPE app_requests_total counter\\n"
-                f"app_requests_total {REQUESTS_TOTAL}\\n"
-                "# HELP app_uptime_seconds Process uptime in seconds\\n"
-                "# TYPE app_uptime_seconds gauge\\n"
-                f"app_uptime_seconds {uptime:.3f}\\n"
+                "# HELP app_requests_total Total HTTP requests received\n"
+                "# TYPE app_requests_total counter\n"
+                f"app_requests_total {REQUESTS_TOTAL}\n"
+                "# HELP app_uptime_seconds Process uptime in seconds\n"
+                "# TYPE app_uptime_seconds gauge\n"
+                f"app_uptime_seconds {uptime:.3f}\n"
             )
             payload = body.encode()
             self.send_response(200)
