@@ -1,0 +1,11 @@
+groups:
+  - name: devops-foundations
+    rules:
+      - alert: AppTargetDown
+        expr: up{job="app"} == 0
+        for: 30s
+        labels:
+          severity: critical
+        annotations:
+          summary: Application metrics target is down
+          description: Prometheus cannot scrape the application.

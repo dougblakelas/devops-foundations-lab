@@ -1,0 +1,19 @@
+{
+  "title": "Application Overview",
+  "schemaVersion": 39,
+  "version": 1,
+  "panels": [
+    {
+      "type": "stat",
+      "title": "Requests Total",
+      "gridPos": {"h": 4, "w": 12, "x": 0, "y": 0},
+      "targets": [{"expr": "app_requests_total", "legendFormat": "requests"}]
+    },
+    {
+      "type": "timeseries",
+      "title": "Uptime Seconds",
+      "gridPos": {"h": 8, "w": 24, "x": 0, "y": 4},
+      "targets": [{"expr": "app_uptime_seconds", "legendFormat": "uptime"}]
+    }
+  ]
+}

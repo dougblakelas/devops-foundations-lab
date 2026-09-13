@@ -1,0 +1,10 @@
+apiVersion: 1
+
+providers:
+  - name: DevOps Foundations
+    orgId: 1
+    folder: DevOps Foundations
+    type: file
+    disableDeletion: false
+    options:
+      path: /var/lib/grafana/dashboards

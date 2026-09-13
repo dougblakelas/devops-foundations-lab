@@ -1,6 +1,6 @@
 # DevOps Foundations Lab
 
-A small, reproducible service used to practice the foundations of DevOps: Git, Python services, Docker, networking, health checks, CI, and monitoring.
+A small, reproducible service used to practice the foundations of DevOps: Git, Python services, Docker, networking, health checks, CI, Prometheus, and Grafana.
 
 ## What this demonstrates
 
